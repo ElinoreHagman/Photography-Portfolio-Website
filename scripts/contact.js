@@ -20,7 +20,7 @@ function contentFadeIn() {
 /**/
 
 /* MAP */
-mapboxgl.accessToken = "pk.eyJ1IjoiZXJvbmlsZSIsImEiOiJjazB4cXZqcDcwNm5hM3BtdXZqNG5qY3kzIn0.y8DlSD20JImtlvRWtqg5NA";
+mapboxgl.accessToken = "none";
     var map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/streets-v11",
