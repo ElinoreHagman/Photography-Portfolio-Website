@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Projektuppgift - Oskar Gulstad</title>
+    <link rel="stylesheet" href="stylesheets/globalStylesheet.css">
+    <link rel="stylesheet" href="stylesheets/person1.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+
+<div id="menuComputer">
+        <a href="mainPage.html"><img class="logoMenu" src="img/logo.png" alt="logo" ></a>
+
+        <div id="horizontalMenu">
+            <ul>
+                <li><a href="mainPage.html">Main Page</a></li>  
+                <li class="dropdown"><a href="presentation.html">The Team <img src="img/arrow.png" alt="arrow"> </a>
+                    <div class="dropdownContent">
+                        <a href="person1.html">Oskar Gulstad</a>
+                        <a href="person2.html">Elinore Hagman</a>
+                        <a href="person3.html">Omar Kalac</a>
+                    </div>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>  
+                <li><a href="contact.html">Contact</a></li>  
+            </ul>
+        </div>
+</div>
+
+
+<!-- LEFT MENU -->
+<div class="menuMobile">
+        <div id="logoLeftMenu"><a href="mainPage.html"><img class="logoMenuMobile" src="img/logo.png" alt="logo"></a></div>
+
+    <div class="gradientLine"></div>
+<ul><li><a href="mainPage.html">Main Page</a></li></ul>
+        <div class="gradientLine"></div>
+<ul><li><a href="presentation.html">The Team</a></li>
+    <li class="linkName"><a href="person2.html">Elinore Hagman</a></li>
+    <li class="linkName"><a href="person3.html">Omar Kalac</a></li></ul>
+        <div class="gradientLine"></div>
+    <ul><li><a href="portfolio.html">Portfolio</a></li></ul>
+        <div class="gradientLine"></div>
+<ul><li><a href="contact.html">Contact Us</a></li></ul>
+        <div class="gradientLine"></div>
+    <button id="menuButton"></button>
+</div>
+<!---->
+
+<div id="wrapper">
+
+    <!-- TOP PART -->
+    <div id="topPage">
+        <div class="titleBox">
+            <h1>Oskar Gulstad</h1>
+        </div>
+    </div>
+    <!---->
+
+    <!-- BOTTOM PART -->
+    <div id="presentation">
+
+        <div id="profileImage">
+            <img id="individualImage" src="img/oskarImage.jpg" alt="profile picture">
+        </div>   
+
+        <div id="progressBarArea">
+            <!-- SKILL PROGRESS BARS -->
+            <div class="skills">
+                <h2>Skills</h2>
+                    <p class="textBar">FIFA</p>
+                <div class="barBackground">
+                    <div id="bar1"></div>
+                </div>
+            
+                    <p class="textBar">FOOTBALL</p>
+                <div class="barBackground">
+                    <div id="bar2"></div>
+                </div>
+            
+                    <p class="textBar">PROGRAMMING</p>
+                <div class="barBackground">
+                    <div id="bar3"></div>
+                </div>
+            </div>
+            <!---->
+
+            <!-- LANGUAGES PROGRESS BARS -->
+            <div class="skills">
+                <h2>Languages</h2>
+                    <p class="textBar">HTML/CSS</p>
+                <div class="barBackground">
+                    <div id="bar4"></div>
+                </div>
+                    <p class="textBar">JAVA</p>
+                <div class="barBackground">
+                    <div id="bar5"></div>
+                </div>
+                    <p class="textBar">SQL</p>
+                <div class="barBackground">
+                    <div id="bar6"></div>
+                </div>
+            </div>
+            <!---->
+        </div>
+
+        <div id="bodyText">
+            <div class="textColumn">
+                Praesent pretium volutpat elit eu mollis. Nam at tellus maximus, efficitur libero quis, gravida risus. Integer dictum venenatis rutrum.
+                Sed congue quam ex, dapibus imperdiet magna ultrices sit amet. Vivamus eget nulla euismod, vulputate mauris sit amet, mollis neque.
+                Nullam et nunc ullamcorper, condimentum odio venenatis, malesuada neque. Mauris ullamcorper pharetra neque, vel ultrices libero.
+                Aenean id erat vitae quam ultricies sagittis sed convallis augue.     
+            </div>
+            <div class="textColumn">
+                    Phasellus vestibulum luctus varius. Vestibulum id ipsum egestas cursus a vitae tortor.
+                    Duis urna odio, vestibulum sed ligula tincidunt, vestibulum sagittis libero.
+                    Aliquam volutpat massa sed diam sodales, non gravida felis auctor. Proin convallis ante dui, sit amet commodo metus pellentesque in
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- (BOTTOM PART END) -->
+
+
+<script src="scripts/person1.js"></script>
+
+</body>
+</html>

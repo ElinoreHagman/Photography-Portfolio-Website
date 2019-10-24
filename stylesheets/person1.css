@@ -1,0 +1,84 @@
+/* THE INDIVIDUAL PROFILE PAGES */
+#presentation {
+    position: relative;
+    height: auto;
+    width: 95%;
+    margin: -35px auto;
+}
+
+#profileImage {
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px #999999;
+    width: 60%;
+    max-width: 300px;
+    margin: auto;
+    border: 6px solid white;
+    border-radius: 4px;
+    opacity: 0;
+}
+
+#individualImage { width: 100%; object-fit: contain; }
+
+#progressBarArea { display: flex; width: 100%; margin: 10px auto; opacity: 0;}
+
+.skills {
+    position: relative;
+    box-shadow: 2px 2px 5px #999999;
+    border-radius: 4px;
+    width: 40%;
+    max-width: 220px;
+    margin: 20px auto 20px auto;
+    padding: 5px 10px 10px 10px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.textBar {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3px;
+    font-size: 13px;
+}
+
+.barBackground {
+    background-color: #ffffff;
+    width: 90%;
+    min-width: 100px;
+    box-shadow: 2px 2px 2px #999999;
+    margin: auto;
+    border-radius: 7px;
+}
+
+#bar1, #bar2, #bar3 {
+    background-color: rgb(70, 70, 253);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    line-height: 17px;
+    width: 60%;
+    height: 15px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+#bar4, #bar5, #bar6 {
+    background-color: rgb(253, 137, 70);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    line-height: 17px;
+    width: 60%;
+    height: 15px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+/**/
+
+
+/* COMPUTER MODE */
+@media screen and (min-width: 768px) {
+    .skills { margin-top: -250px; width: 20%; }
+    #profileImage { width: 20%; }
+}

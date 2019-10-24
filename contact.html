@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Projektuppgift - Contact Us</title>
+    <link rel="stylesheet" href="stylesheets/globalStylesheet.css">
+    <link rel="stylesheet" href="stylesheets/contact.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+</head>
+
+<body>
+
+<!-- 2 DIFFERENT MENUES COMPUTER/MOBILE -->
+<div id="menuComputer">
+    <a href="MainPage.html"><img class="logoMenu" src="img/logo.png" alt="logo" ></a>
+    <div id="horizontalMenu">
+        <ul>
+            <li><a href="MainPage.html">Main Page</a></li>  
+            <li class="dropdown"><a href="Presentation.html">The Team <img src="img/arrow.png" alt="arrow"> </a>
+                <div class="dropdownContent">
+                    <a href="person1.html">Oskar Gulstad</a>
+                    <a href="person2.html">Elinore Hagman</a>
+                    <a href="person3.html">Omar Kalac</a>
+                </div>
+            </li>
+            <li><a href="Portfolio.html">Portfolio</a></li>  
+            <li><a href="Contact.html">Contact</a></li>  
+        </ul>
+    </div>
+</div>
+
+<div class="menuMobile">
+    <div id="logoLeftMenu"><a href="MainPage.html"><img class="logoMenuMobile" src="img/logo.png" alt="logo"></a></div>
+    <div class="gradientLine"></div>
+    <ul>
+        <li><a href="MainPage.html">Main Page</a></li>
+    </ul>
+    <div class="gradientLine"></div>
+    <ul>
+        <li><a href="Presentation.html">The Team</a></li>
+        <li class="linkName"><a href="person1.html">Oskar Gulstad</a></li>
+        <li class="linkName"><a href="person2.html">Elinore Hagman</a></li>
+        <li class="linkName"><a href="person3.html">Omar Kalac</a></li>
+    </ul>
+    <div class="gradientLine"></div>
+    <ul>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+    </ul>
+    <div class="gradientLine"></div>
+    <button id="menuButton"></button>
+</div>
+<!---->
+
+<div id="wrapper">
+
+    <!-- TOP PART -->
+    <div id="topPage">
+        <div class="titleBox">
+            <h1>Contact us</h1>
+            <h2>Feel free to send us an email with questions, or ask for a quote if you want us for a project.
+                Expect an answer within 3 days, but around holidays it can take up to five business days. Please be patient,
+                and send us another email if you haven't gotten an answer after a week.
+            </h2>
+        </div>
+    </div>
+    <!---->
+
+    <!-- BOTTOM PART -->
+    <div id="bottomPage">
+        <div id="bodyText">
+            Feel free to send us an email with questions, or ask for a quote if you want us for a project.
+            Expect an answer within 3 days, but around holidays it can take up to five business days. Please be patient,
+            and send us another email if you haven't gotten an answer after a week.
+        </div>
+
+        <div id="content">
+
+            <div id="formArea">
+                <form id="form">
+                    <h3>Send us a message</h3>
+                    <p>Name:</p>
+                    <input type="text" id="name" placeholder="Name"><br />
+                    <label class="warning" id="nameW"></label>
+                    <p>Email:</p>
+                    <input type="text" id="email" placeholder="name@email.com"><br />
+                    <label class="warning" id="emailW"> </label>
+                    <p>Phone number:</p> 
+                    <input type="text" id="number" placeholder="07x-xxxxxxx"><br />
+                    <label class="warning" id="numberW"> </label>
+                    <p>Message:</p>
+                    <textarea id="message" rows="5" cols="30" placeholder="Write your message.."></textarea><br />
+                    <label class="warning" id="messageW"> </label>
+                    <button id="sendMessage">Send Message</button>
+                </form>
+                <button id="clearMessage">Clear information</button>
+                <div id="messageSent"><p>Your message has been sent!<br />We will get back to you shortly!</p></div>
+                <button id="removeOverlay"></button>
+
+            </div>
+
+            <div id="mapArea">
+                <h3>You can find us here</h3>
+                <div id="map"></div>
+                <p>Fakultetsgatan 1, 702 81 Örebro</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- (END OF BOTTOM PART) -->
+</div>
+<script src="scripts/contact.js"></script>
+</body>
+</html>
